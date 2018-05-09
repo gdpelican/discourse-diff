@@ -20,6 +20,8 @@ module Discourse
     def inline_html
       i = 0
       inline = []
+      inline << @before if @before == @after
+
       while i < @block_by_block_diff.length
         op_code = @block_by_block_diff[i][1]
         if op_code == :common then inline << @block_by_block_diff[i][0]
