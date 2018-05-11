@@ -20,13 +20,23 @@ Or install it yourself as:
 
 ## Usage
 
+#### Inline diff for single paragraph text
 ```
 Discourse::Diff.new("before text", "after text").inline_html
+```
+#### HTML markdown of html differences
+```
+# 
+Discourse::Diff.new("before text", "after text").side_by_side_html
+```
+#### HTML markdown of markdown differences
+```
+Discourse::Diff.new("before text", "after text").side_by_side_markdown
 ```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/discourse-diff. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/gdpelican/discourse-diff
 
 ## License
 
