@@ -1,3 +1,4 @@
+<test>
 # Discourse::Diff
 
 This is a inline html diffing engine forked off of [Discourse](https://github.com/discourse/discourse). All credit goes to them :)
